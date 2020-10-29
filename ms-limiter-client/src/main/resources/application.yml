@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: limiter-client
+  cloud:
+    sentinel:
+      transport:
+        port: 8721
+        client-ip: 10.54.8.68
+        dashboard: localhost:8858
+      eager: true
+
+server:
+  port: 8762
+
+logging:
+  level:
+    com:
+      alibaba:
+        cloud:
+          sentinel: debug
